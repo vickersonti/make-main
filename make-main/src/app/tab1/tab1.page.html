@@ -1,0 +1,51 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>THE WORLD OF MAKEUP</ion-card-title>
+    
+      <div class="topo">
+        <ion-img class="logo" src="../../assets/images/logo.jfif" alt="" />
+    
+      </div>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let i of cardapioImages">
+          <ion-thumbnail slot="start">
+            <img src={{i}} />
+          </ion-thumbnail>
+          <ion-label></ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <swiper-container slides-per-view="2" speed="500" loop="true" css-mode="true">
+    <swiper-slide>
+        <ion-card class="carrossels">
+          <img src="../../assets/images/jupxt.jfif" alt="">
+        </ion-card>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-card class="carrossels">
+        <img src="../../assets/images/ruby.jpg" alt="">
+      </ion-card>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-card class="carrossels"> 
+        <img src="../../assets/dest3.jpg" alt="">
+      </ion-card>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-card class="carrossels">
+        <img src="../../assets/dest4.jpg" alt="">
+      </ion-card>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-card class="carrossels">
+        <img src="../../assets/dest5.jpg" alt="">
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+
+</ion-content>
